@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WhatsupSend</string>
+    <string name="delete_dialog">Удалить сообщение</string>
+    <string name="cancel">Отмена</string>
+    <string name="delete">Удалить</string>
+    <string name="choose">Выбрать</string>
+    <string name="permoment_send">Отправлять сообщение при запуске</string>
+    <string name="open_chat">Открыть чат</string>
+</resources>
