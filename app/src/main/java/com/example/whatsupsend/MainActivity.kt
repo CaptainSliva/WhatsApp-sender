@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity()  {
 
         messagesDao = db.userDao()
         CoroutineScope(Dispatchers.IO).launch {
-//            messagesDao.delete() //////////////////////////////////////////////////////////
+            messagesDao.delete() //////////////////////////////////////////////////////////
             loadMessages()
             adapter.notifyDataSetChanged()
         }
@@ -277,7 +277,6 @@ class MainActivity : AppCompatActivity()  {
             val item = data[i]
             if (item.getColor() == R.color.current) {
 
-                val pm = packageManager
                 try {
                     val waIntent = Intent(Intent.ACTION_SEND)
                     waIntent.setType("text/plain")
@@ -294,7 +293,9 @@ class MainActivity : AppCompatActivity()  {
 
                 Thread.sleep(2000)
                 changeColor(i)
-                item.setColor(R.color.black)
+                if(data.size > 1) {
+                    item.setColor(R.color.black)
+                }
                 adapter.notifyDataSetChanged()
                 break
             }
@@ -434,7 +435,8 @@ fun changeColor(position: Int) {
             data[position+1].setColor(R.color.current)
         }
         if (data.size == 1) {
-            flag = false
+            flag = true
+            data[position].setColor(R.color.current)
         }
     }
 }
