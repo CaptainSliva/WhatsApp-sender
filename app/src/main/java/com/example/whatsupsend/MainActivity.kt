@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity()  {
 
         messagesDao = db.userDao()
         CoroutineScope(Dispatchers.IO).launch {
-            messagesDao.delete() //////////////////////////////////////////////////////////
+//            messagesDao.delete() //////////////////////////////////////////////////////////
             loadMessages()
             adapter.notifyDataSetChanged()
         }
@@ -356,7 +356,6 @@ class MainActivity : AppCompatActivity()  {
         if (requestCode == CONTACT_PERMISSION_CODE){
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 //permission granted, can pick contact
-                pickContact()
             }
             else{
                 //permission denied, cann't pick contact, just show message
