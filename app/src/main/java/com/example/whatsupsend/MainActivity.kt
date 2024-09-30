@@ -108,7 +108,7 @@ class MainActivity : AppCompatActivity()  {
             AppDatabase::class.java, "MessagesDB"
         ).build()
 
-
+        data.clear()
         messagesDao = db.userDao()
         CoroutineScope(Dispatchers.IO).launch {
 //            messagesDao.delete() //////////////////////////////////////////////////////////
