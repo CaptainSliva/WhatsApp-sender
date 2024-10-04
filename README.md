@@ -1,4 +1,5 @@
-# WhatsApp-sender
+# WhatsApp-sender ![WhatsApp-sender icon](https://github.com/user-attachments/assets/9cd5c98c-1fe9-4205-834e-d684eb1faade)
+
 WhatsupSend
 
 Описание:
