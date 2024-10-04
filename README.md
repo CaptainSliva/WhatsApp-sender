@@ -14,3 +14,5 @@ WhatsupSend
 
 Другое:
 Можно выбрать контакт из телефонной книги, тогда при нажатии на иконку whatsapp в приложении будет открыт этот чат.
+
+![WhatsAppSender](https://github.com/user-attachments/assets/4bef970f-7670-4c26-8f02-2d0c4b2b3b2c)
